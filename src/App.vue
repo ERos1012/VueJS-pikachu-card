@@ -20,120 +20,74 @@ import HelloWorld from './components/HelloWorld.vue'
   margin-top: 60px;
 }
 
-.card{
-  border-radius: 24px;
-  border: 3px solid #041E42;
+.detailsBtn{
+  text-transform: uppercase;
   padding: 8px;
-  width: 400px;
-  display: block;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0px 8px 24px #999;
-  background-color: lightgrey;
-  text-align: center;
+  background-color: black;
+  color: red;
+}
+
+.card{
+  background-color: orange;
+  max-width:400px;
+  margin: 16px;
+}
+
+.pikachuImage{
+  height: auto;
+  width: 200px;
+  padding: 8px;
+}
+
+.title {
+  font-size: 60px;
+  margin: 8px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.textbox{
-  font-size: 15px;
-  margin-left: 112px;
-  text-align: right;
-  border-radius: 24px;
-}
-
-.description{
-  text-shadow: -1px 1px 2px #FFFFFF,
-				  1px 1px 2px #FFFFFF,
-				  1px -1px 0 #FFFFFF,
-				  -1px -1px 0 #FFFFFF;
-}
-
-.haxbtn{
-  display:inline-block;
-  text-align: center;
-  color: white;
-  background-color: #041E42;
-  border-radius: 5px;
+.paragraph {
   font-size: 20px;
-  width: 120px;
-  height: 32px;
-  box-shadow: 0px 10px 24px #999;
-  border: 1px solid #041E42;
-  visibility: visible;
-  padding-top: 10px;
-  margin-right: 32px;
+  margin: 16px 8px 8px;
+  border: 3px solid #555;
 }
 
-.haxbtn:hover{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
+@media only screen and (max-width: 500px) {
+  .detailsBtn {
+    visibility: hidden;
+  }
 }
 
-.haxbtn:focus{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
+@media only screen and (min-width: 800px) {
+  .detailsBtn {
+    visibility: hidden;
+  }
 }
 
-.title{
-  color: white;
-  font-size: 24px;
-  text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
+@media screen and (max-width: 500px) {
+  .card {
+    width: 300px;
+    height: auto;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+  .detailsBtn {
+    width: 150px;
+    height: auto;
+  }
 }
 
-.giaImg{
-  width: 200px;
-  border-radius: 24px;
-  box-shadow: 0px 10px 24px #999;
-  float: left;
+.buttons button:hover {
+  background-color: pink;
+  color: red;
 }
 
-.outsideBtn{
-  color: white;
-  background-color: #041E42;
-  border-radius: 5px;
-  font-size: 20px;
-  width: 120px;
-  height: 50px;
-  box-shadow: 0px 10px 24px #999;
-  border: 1px solid #041E42;
-  margin-right: 32px;
-  margin-bottom: 16px;
-  display: inline-block;
+.buttons button:focus {
+  background-color: green;
 }
-
-.outsideBtn:hover{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
-}
-
-.outsideBtn:focus{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
-}
-
-.basic{
-  background-color: hotpink;
-}
-
-.hoverCard{
-  border: 3px solid purple;
-  box-shadow: 0px 8px 24px yellow;
-}
-
-input:checked + label + .description { display:none; }
-
 
 
 </style>

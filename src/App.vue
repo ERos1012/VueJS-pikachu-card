@@ -20,6 +20,7 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 
 .card{
+  text-align: center;
   background-color: orange;
   max-width:400px;
   margin: 16px;
